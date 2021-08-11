@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color: #181818;
+  --secondary-color: #262626;
+  --highlight-color: #4b4b4b;
+  --text-color: #f6f6f6;
+  --text-color-secondary: rgb(184, 184, 184);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.centered {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pomodoro-container {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  width: clamp(350px, 50vw, 600px);
+  height: clamp(250px, 70vw, 430px);
+  border: 2px solid var(--highlight-color);
+  border-radius: 25px;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.timer {
+  font-size: clamp(50px, 5vw, 70px);
+  font-weight: 600;
+}
+
+.buttons {
+  width: clamp(200px, 40vw, 280px);
+  height: 100px;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  background: none;
+  color: var(--text-color-secondary);
+  width: clamp(70px, 10vw, 100px);
+  height: clamp(45px, 10vw, 65px);
+  outline: none;
+  border: 2px solid var(--highlight-color);
+  border-radius: 15px;
+  font-size: clamp(15px, 2vw, 20px);
 }

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="main flex-column centered">
+        <div className="pomodoro-container flex-column">
+          <h1 className="title">Pomodoro</h1>
+          <div className="timer">
+            <span>00</span>
+            <span>:</span>
+            <span>00</span>
+          </div>
+          <div className="buttons flex-row">
+            <button className="button" id="start-or-pause">
+              Start
+            </button>
+            <button className="button" id="stop">
+              Stop
+            </button>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
