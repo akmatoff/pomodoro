@@ -83,4 +83,10 @@ a {
   border: 2px solid var(--highlight-color);
   border-radius: 15px;
   font-size: clamp(15px, 2vw, 20px);
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
 }
