@@ -67,7 +67,7 @@ a {
 }
 
 .buttons {
-  width: clamp(200px, 40vw, 280px);
+  width: clamp(230px, 40vw, 280px);
   height: 100px;
   padding: 20px;
   justify-content: space-around;
@@ -77,7 +77,7 @@ a {
 .button {
   background: none;
   color: var(--text-color-secondary);
-  width: clamp(70px, 10vw, 100px);
+  width: clamp(80px, 10vw, 110px);
   height: clamp(45px, 10vw, 65px);
   outline: none;
   border: 2px solid var(--highlight-color);
